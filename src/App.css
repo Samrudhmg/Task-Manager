@@ -1,38 +1,223 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  padding-top: 10vh;
+  background: #000000; 
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); 
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); 
+}
+
+.app-container {
+  width: 50%;
+  /* background-color: rgb(89, 234, 130);*/
+  background: #ff00cc; 
+  background: -webkit-linear-gradient(
+    to right,
+    #333399,
+    #ff00cc
+  ); 
+  background: linear-gradient(
+    to right,
+    #333399,
+    #ff00cc
+  ); 
+
+  height: 80vh;
+  margin: auto;
+  /* margin-top: 4rem; */
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
   text-align: center;
-}
+  /* overflow-y:scroll; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  h1 {
+    margin: 10px 0;
+    color: #fff;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tasklist {
+  width: 110%;
+  /* background-color: rgb(142, 207, 220); */
+  height: 50vh;
+  overflow-y: scroll;
+  /* overflow-x: scroll; */
+  scrollbar-width: thin;
+  margin-top: 2vh;
+  margin-left: -1.7rem;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  width: 80%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  margin: auto;
+  overflow-x: scroll;
+  /* margin-top: 3vh; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+td {
+  padding: 8px;
+
+  /* border-bottom: 1px solid #ddd; */
+  text-align: center;
+  background-color: #f4f4f4;
+  margin-bottom: 10px;
+  /* border: 1px solid black; */
+}
+
+td:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+td:nth-child(4) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.task-item.completed {
+  color: gray;
+}
+
+.delete {
+  padding: 6px 10px;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: rgb(189, 0, 0);
+  color: #f4f4f4;
+  transform: scale(1.04);
+  transition: all 0.1s ease-in;
+}
+
+.searchbar {
+  input {
+    width: 50%;
+    height: 4.5vh;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    margin-right: 0;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.taskinput {
+  input {
+    width: 50%;
+    height: 4.5vh;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    padding: 10px;
+    margin-top: 1vh;
+  }
+
+  select {
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 1vw;
+  }
+
+  button {
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 1vw;
+  }
+}
+
+.sort-buttons {
+  button {
+    padding: 10px 10px;
+    border: none;
+    margin-top: 1vh;
+    border-radius: 10px;
+    margin-left: 1vw;
+    cursor: pointer;
+  }
+}
+
+button {
+  background-color: #fff;
+}
+.sort-buttons button:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(204, 255, 207);
+  /* color: #fff; */
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+  }
+
+  .app-container {
+    width: 90%;
+  }
+
+  table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    margin: auto;
+    overflow-x: scroll;
+    /* margin-top: 3vh; */
+  }
+
+  td {
+    padding: 8px;
+
+    /* border-bottom: 1px solid #ddd; */
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    /* border: 1px solid black; */
+  }
+
+  .tasklist {
+    width: 110%;
+
+    margin-left: -1rem;
   }
 }

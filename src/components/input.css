@@ -1,0 +1,17 @@
+button {
+  background-color: #fff;
+}
+.taskinput button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(215, 215, 215);
+  /* color: #fff; */
+}
+
+select {
+  cursor: pointer;
+
+  option {
+    cursor: pointer;
+  }
+}

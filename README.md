@@ -1,70 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- Task Manager -->
+1. About the Application and What It Can Do
+This is a simple yet powerful Task Management App built with React, perfect for keeping track of your tasks and priorities. Here’s what you can do with it:
 
-## Available Scripts
+Add Tasks: Quickly add tasks by typing a title and setting a priority level (Low, Medium, or High) when creating a new task.
+Mark as Complete: Click on any task to mark it as complete, which strikes through both the title and priority, making it easy to see what’s done.
 
-In the project directory, you can run:
+Delete Tasks: Remove tasks with just a click of a button to keep your list clutter-free.
 
-### `npm start`
+Persistent Storage: Tasks are saved in your browser’s local storage, so they won’t disappear when you refresh the page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Search and Sort: A handy search bar filters tasks by title, and there are sorting options to organize tasks alphabetically (A-Z, Z-A) or by priority (Low-High, High-Low).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Serial Numbers and Organized Layout: Tasks are displayed in a neat table with serial numbers, making the list clear and organized.
 
-### `npm test`
+This app provides a clean, intuitive interface to help manage tasks and priorities effortlessly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. How to Set It Up and Get Started
+Setting up the app is simple:
 
-### `npm run build`
+Requirements: Make sure you have Node.js and npm installed on your computer.
+Installation: Open your terminal, navigate to the project folder, and run:
+bash
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will install all the dependencies needed to run the app.
+Run the App: Once installed, start the app with:
+bash
+Copy code
+npm start
+The app will open in your browser, and you’ll be ready to add and manage tasks!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+3. Assumptions Made During Development
+A few assumptions helped shape the development:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Fixed Priority: Once a priority is set for a task, it can’t be changed. This simplifies the task structure.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Persistent Storage in Local Storage: The app uses localStorage to save tasks between sessions. This works for individual use on the same browser but wouldn’t sync tasks across devices or browsers.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Basic Sorting: Sorting is limited to alphabetical and priority-based options, keeping the interface straightforward.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Table Layout: The list is displayed in a table with serial numbers for easy organization and readability.
 
-## Learn More
+This app aims to provide a smooth, focused experience for managing tasks without overwhelming options. Hope you enjoy using it!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
