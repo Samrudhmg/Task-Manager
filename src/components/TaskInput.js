@@ -37,7 +37,7 @@ const TaskInput = ({ addTask }) => {
         <button type="submit">Add Task</button>
       </form>
     </div>
-  );
+  )
 };
 
 export default TaskInput;
