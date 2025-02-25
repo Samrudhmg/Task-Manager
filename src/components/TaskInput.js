@@ -7,6 +7,7 @@ const TaskInput = ({ addTask }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(e);
     if (!title) return;
 
     const newTask = {
